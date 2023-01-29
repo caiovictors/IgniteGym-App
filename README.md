@@ -5,8 +5,7 @@
 
 # 💡 About
 
-**Gym application made during Rocketseat's Ignite. </br>
-View and organize your exercises.**
+**View and organize your exercises with this Gym application made during Rocketseat's Ignite. </br>**
 
 # 📐 Layout
 
