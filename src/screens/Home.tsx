@@ -1,10 +1,15 @@
+import { Group } from "@components/Group";
 import { HomeHeader } from "@components/HomeHeader";
-import { Center, Text } from "native-base";
+import { HStack, VStack } from "native-base";
 
 export function Home() {
   return (
-    <Center flex={1}>
+    <VStack flex={1}>
       <HomeHeader />
-    </Center>
+      <HStack>
+        <Group name="costas" />
+        <Group name="ombro" />
+      </HStack>
+    </VStack>
   )
 }
