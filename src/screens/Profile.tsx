@@ -79,7 +79,7 @@ export function Profile() {
           <Input placeholder="Nome" bg="gray.600" />
           <Input value="cvsarmento@hotmail.com" bg="gray.600" isDisabled />
 
-          <Heading color="gray.200" fontSize="md" mb={2} alignSelf="flex-start" mt={12}>Alterar senha</Heading>
+          <Heading color="gray.200" fontSize="md" mb={2} alignSelf="flex-start" mt={12} fontFamily="heading">Alterar senha</Heading>
 
           <Input placeholder="Senha antiga" bg="gray.600" secureTextEntry />
           <Input placeholder="Nova senha" bg="gray.600" secureTextEntry />

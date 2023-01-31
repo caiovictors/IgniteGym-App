@@ -24,7 +24,7 @@ export function History() {
           <HistoryCard />
         )}
         renderSectionHeader={({ section: { title } }) => (
-          <Heading color="gray.200" fontSize="md" mt={10} mb={3}>
+          <Heading color="gray.200" fontSize="md" mt={10} mb={3} fontFamily="heading">
             {title}
           </Heading>
         )}
