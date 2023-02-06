@@ -7,8 +7,11 @@ import { useAuth } from "@hooks/useAuth";
 
 import defaultUserPhotoImg from '@assets/userPhotoDefault.png'
 import { UserPhoto } from "./UserPhoto";
+
 import { useNavigation } from "@react-navigation/native";
+
 import { AppNavigatorRoutesProps } from "@routes/app.routes";
+import { api } from "@services/api";
 
 export function HomeHeader() {
   const { user, signOut } = useAuth()
@@ -21,7 +24,13 @@ export function HomeHeader() {
   return (
     <HStack bgColor="gray.600" pt={16} pb={5} px={8} alignItems="center">
       <TouchableOpacity onPress={handleGoToProfile}>
-        <UserPhoto source={user.avatar ? { uri: user.avatar } : defaultUserPhotoImg} size={16} alt="Imagem do usuário" mr={3} />
+        <UserPhoto source={user.avatar ? 
+          { uri: `${api.defaults.baseURL}/avatar/${user.avatar}` }
+           : defaultUserPhotoImg} 
+          size={16} 
+          alt="Imagem do usuário"
+           mr={3} 
+           />
       </TouchableOpacity>
       <VStack flex={1}>
         <Text color="gray.100" fontSize="md">Olá, </Text>
